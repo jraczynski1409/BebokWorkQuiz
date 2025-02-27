@@ -1,5 +1,5 @@
 *{
-    font-size: 80px;   
+    box-sizing: border-box;
 }
 
 body{
@@ -13,6 +13,26 @@ body{
     color:#ddd;
     height: 95vh;
     font-family: Arial, sans-serif;
+    height: 95vh;
+    position: relative;
+}
+
+#settings{
+    display: grid;
+    min-width: 400px;
+    min-height: 10px;
+    background-color: #414643;
+    position: absolute;
+    top:15px;
+    padding: 8px ;
+    left: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    gap:6px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    justify-items: end;
 }
 
 #letters{
@@ -20,11 +40,76 @@ body{
     height: 20vh;
     letter-spacing: 40px;
     text-align: center;
-    color:rgb(240, 82, 82)
+    color:rgb(240, 82, 82);
+    font-size: 80px;
 }
 
 #clock{
-    height: 20vh;
+    height: 40vh;
     font-size: 228px;
     font-weight: 900;
 }
+
+#loading-box{
+    bottom: 10px;
+    width: 90vw;
+    height: 32px;
+    background-color: #414643;
+    position: absolute;
+}
+
+#loading-bar{
+    height: inherit;
+    width: 1%;
+    background-color: #389c6a;
+}
+
+#loading-value{
+    height: inherit;
+    position: absolute;
+    top:0px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 32px;
+}
+
+input{
+    background-color: #585e5a;
+    color:#ddd;
+    padding: 5px;
+    border:0px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 3px;
+    text-align: right;
+    
+}
+
+input:focus {
+    outline: none;
+    background-color: #6c746e;
+    box-shadow: 0 0 5px rgba(44, 44, 44, 0.5);
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%) ;
+    cursor: pointer;
+}
+
+
+#start,#end{
+    grid-row:2;
+}
+
+#label{
+    font-size: 15px;
+}
+
+
+
+
+
+

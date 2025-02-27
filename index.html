@@ -5,11 +5,20 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="settings">
+            <div class="label">Rozpoczęcie</div><div class="label">Zakończenie</div>
+            <input type="time" value="07:00" id="start" >
+            <input type="time" value="15:00" id="end">
+            
+        </div>
         <div id="letters">
         </div>
         <div id="clock">
         </div>
-
+        <div id="loading-box">
+            <div id="loading-bar"></div>
+            <div id="loading-value">30%</div>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
